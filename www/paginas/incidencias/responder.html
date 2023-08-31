@@ -1,0 +1,21 @@
+<div data-role="header" data-theme="c" class="tituloCabecera">Responder incidencia</div>
+
+<div data-role="content">
+	<form method="post" data-ajax="false" id="form_respuesta_incidencia">
+	  <ul data-role="listview">
+		  <li class="ui-field-contain">
+		    <label for="incidencia_respuesta">Respuesta:</label>
+		    <textarea cols="40" rows="2" name="incidencia[respuesta]" id="incidencia_respuesta" required></textarea>
+		  </li>
+		  <li class="ui-body ui-body-a">
+		    <fieldset class="ui-grid-a">
+		      <div class="ui-block-a"><a href="javascript:app.incidencias();" data-ajax="false" class="ui-btn">Cancelar</a></div>
+		      <div class="ui-block-b"><button type="submit" data-theme="b">Guardar</button></div>
+		    </fieldset>
+		  </li>
+		</ul>
+		<input type="hidden" name="incidencia[id_incidencia]" id="incidencia_id">
+		<input type="hidden" name="incidencia[id_customer]" id="incidencia_id_customer">
+		<input type="hidden" name="incidencia[id_usuario]" id="incidencia_id_usuario">
+	</form>
+</div>

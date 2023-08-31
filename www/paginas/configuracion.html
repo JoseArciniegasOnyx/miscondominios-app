@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+
+<div data-role="header" data-theme="c" class="tituloCabecera">Configuración</div>
+
+<div data-role="content">        
+  <form action="#" method="post" data-ajax="false" onsubmit="return false;">
+    <label for="avisos_offline">Avisos Offline (+ días respecto a hoy )</label>
+    <input name="avisos_offline" id="avisos_offline" value="0" min="0" max="30" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d" type="range">
+    
+    <label for="notificaciones">Notificaciones Push</label>
+    <select name="notificaciones" id="notificaciones" data-role="slider">
+        <option value="0">No</option>
+        <option value="1">Si</option>
+    </select>
+        
+    <label for="timer_location">Intervalo Geolocalización</label>
+    <select name="timer_location" id="timer_location" data-mini="true">
+        <option value="1">1 minuto</option>
+        <option value="5">5 minutos</option>
+        <option value="15">15 minutos</option>
+        <option value="30">30 minutos</option>
+    </select>
+    
+    <fieldset data-role="controlgroup" data-iconpos="right">
+      <legend>Navegador Gps</legend>
+      <input name="nav" id="google" value="google" type="radio">
+      <label for="google">
+        <span class="radio-img radio-google">Google Maps</span>
+      </label>
+      <input name="nav" id="waze" value="waze" type="radio">
+      <label for="waze">
+        <span class="radio-img radio-waze">Waze</span>
+      </label>
+    </fieldset>
+    <div class="textAlignCenter marginTop10">
+      <button type="submit" data-theme="b" data-mini="true" data-inline="true" id="enviar_formulario">Guardar</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,48 @@
+<div data-role="header" data-theme="c" class="tituloCabecera">Reservar instalación: </div>
+
+<div data-role="content">
+	<form method="post" data-ajax="false" id="form_reserva_instalacion">
+	  <ul data-role="listview">
+	    <li class="ui-field-contain">
+	      <label for="reserva_fecha">Fecha:</label>
+	      <input name="reserva[fecha]" id="reserva_fecha" value="" type="date" required>
+	    </li>
+	    <li class="ui-body ui-body-a">
+		    <fieldset class="ui-grid-a">
+		      <div class="ui-block-a">
+		      <label for="reserva_inicio">Desde:</label>
+	      		<input name="reserva[inicio]" id="reserva_inicio" value="" type="time" required>
+		      </div>
+		      <div class="ui-block-b">
+		      	<label for="reserva_fin">Hasta:</label>
+	      		<input name="reserva[fin]" id="reserva_fin" value="" type="time" required>
+		      </div>
+		    </fieldset>
+		  </li>
+	    <li class="ui-field-contain">
+	      <label for="reserva_solicitante" class="select">Solicitante:</label>
+		    <select name="reserva[id_prop_prop]" id="reserva_solicitante"></select>
+		  </li>
+		  <li class="ui-field-contain">
+		    <label for="reserva_motivo">Motivo:</label>
+		    <textarea cols="40" rows="2" name="reserva[motivo]" id="reserva_motivo"></textarea>
+		  </li>
+		  <li class="ui-field-contain" id="li_reglamento">
+		    <label for="reserva_reglamento">Acepto el <a id="verReglamento" class="enlace">reglamento de uso</a>:</label>
+		    <select name="reserva[aceptar]" id="reserva_reglamento" data-role="slider">
+		      <option value="0">No</option>
+		      <option value="1" data-theme="a">Si</option>
+		    </select>
+		  </li>
+		  <li class="ui-body ui-body-a">
+		    <fieldset class="ui-grid-a">
+		      <div class="ui-block-a"><a href="javascript:app.instalaciones();" data-ajax="false" class="ui-btn">Cancelar</a></div>
+		      <div class="ui-block-b"><button type="submit" data-theme="b">Reservar</button></div>
+		    </fieldset>
+		  </li>
+		</ul>
+		<input type="hidden" name="reserva[id_instalacion]" id="reserva_id">
+		<input type="hidden" name="reserva[id_comunidad]" id="reserva_id_comunidad">
+		<input type="hidden" name="reserva[id_customer]" id="reserva_id_customer">
+	</form>
+</div>

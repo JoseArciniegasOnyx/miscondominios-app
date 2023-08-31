@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "61080583008",
+    "project_id": "miscondominios",
+    "storage_bucket": "miscondominios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61080583008:android:bfedf6911403c89f67bc05",
+        "android_client_info": {
+          "package_name": "com.miscondominios.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61080583008-u6u82976lp08ves2sj691vcnu1emeuda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_mnbH-mR04VtOb4fotMmEQIJcM84pbhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61080583008-u6u82976lp08ves2sj691vcnu1emeuda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<div data-role="header" id="app_cabecera">
+  <a href="javascript:cargarMenu();" data-ajax="false" id="enlace_menu_principal" data-theme="b">
+    <img src="img/cuadrados-inicio.png"/>
+  </a>
+  <h1>__COMUNIDAD__</h1>
+  <a href="javascript:void(0);" id="enlace_menu_secundario" onclick="$('#menu_secundario').panel('open');" data-theme="b">
+    <img src="img/puntos-opciones.png"/>
+  </a>
+</div>
+
+<div id="app_content" class="ui-panel-content-wrap ui-body-c ui-panel-animate ui-panel-content-wrap-position-right ui-panel-content-wrap-display-overlay ui-panel-content-wrap-open"></div>
+
+<div data-role="panel" data-position="right" id="menu_secundario" data-display="overlay" data-theme="b">
+  <div class="ui-panel-inner" id="app_panel_content"></div>
+</div>

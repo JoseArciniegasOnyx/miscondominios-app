@@ -1,0 +1,18 @@
+<div data-role="header" data-theme="c" class="tituloCabecera">Visitas</div>
+
+<div data-role="content">
+<a href="javascript:nuevaVisita();" class="ui-btn ui-btn-b">Nueva Visita</a>
+<a id="btnPersonas" href="javascript:app.personas();" class="ui-btn ui-btn-b">Listado Personas</a>
+<fieldset id="contFechas" class="ui-grid-a">
+    <div class="ui-block-a">Desde:<br /><input type="date" id="desde" name="desde" value="" /></div>
+    <div class="ui-block-b">Hasta:<br /><input type="date" id="hasta" name="hasta" value="" /></div>
+</fieldset>
+
+	<div style="height: 5px; clear: both;"></div>
+  <ul id="visitas" data-role="listview" data-filter="true" data-filter-placeholder="Buscar visitas..."></ul>
+
+  <p id="backVis" class="hide"><br/>
+    <a id="btnVolver" href="javascript:cargarMenu();" class="ui-alt-icon" data-role="button" data-mini="false" data-icon="arrow-l">Volver</a>
+    <a id="btnCerrar" href="javascript:app.logout();" class="ui-alt-icon" data-role="button" data-mini="false" data-icon="arrow-l">Cerrar sesión</a>
+  </p>
+</div>

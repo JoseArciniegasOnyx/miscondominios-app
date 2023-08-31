@@ -1,0 +1,26 @@
+<div data-role="header" data-theme="c" class="tituloCabecera">Nueva incidencia</div>
+
+<div data-role="content">
+	<form method="post" data-ajax="false" id="form_nueva_incidencia">
+	  <ul data-role="listview">
+	    <li class="ui-field-contain">
+	      <label for="incidencia_titulo">Título:</label>
+	      <input name="incidencia[titulo]" id="incidencia_titulo" value="" type="text" required>
+	    </li>
+		  <li class="ui-field-contain">
+		    <label for="incidencia_descripcion">Descripción:</label>
+		    <textarea cols="40" rows="2" name="incidencia[descripcion]" id="incidencia_descripcion" required></textarea>
+		  </li>
+		  <li class="ui-body ui-body-a">
+		    <fieldset class="ui-grid-a">
+		      <div class="ui-block-a"><a href="javascript:app.incidencias();" data-ajax="false" class="ui-btn">Cancelar</a></div>
+		      <div class="ui-block-b"><button type="submit" data-theme="b">Guardar</button></div>
+		    </fieldset>
+		  </li>
+		</ul>
+		<input type="hidden" name="incidencia[id_comunidad]" id="incidencia_id_comunidad">
+		<input type="hidden" name="incidencia[id_customer]" id="incidencia_id_customer">
+		<input type="hidden" name="incidencia[id_usuario]" id="incidencia_id_usuario">
+		<input type="hidden" name="incidencia[estado]" value="pen">
+	</form>
+</div>

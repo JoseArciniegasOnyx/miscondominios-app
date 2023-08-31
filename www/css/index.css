@@ -1,0 +1,155 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+/*body {
+    -webkit-touch-callout: none;                
+    -webkit-text-size-adjust: none;             
+    -webkit-user-select: none;                  
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}*/
+
+#mobile-login{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.logo_login{
+    width: 140px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.bgLoginPage{
+    background: #b5bdc8 !important; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #b5bdc8 0%, #151a20 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#b5bdc8), color-stop(100%,#151a20)) !important; /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #b5bdc8 0%,#151a20 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #b5bdc8 0%,#151a20 100%) !important;/* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #b5bdc8 0%,#151a20 100%) !important; /* IE10+ */
+    background: radial-gradient(ellipse at center,  #b5bdc8 0%,#151a20 100%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#151a20',GradientType=1 ) !important; /* IE6-9 fallback on horizontal gradient */
+    vertical-align: top;
+}
+
+#enlace_menu_principal, #enlace_menu_secundario {
+    border: 0;
+}
+
+.padre_enlace_menu{
+  display: inline-block;
+}
+
+.enlace_menu{
+  width: 90px;
+  height: 100px;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 80%;
+  margin: 0 5px 20px 0;
+  position: relative;
+  float: left;
+}
+.enlace_menu a{
+  margin-bottom: 3px;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  border: 4px solid #76b71f;
+  background-color: #ffffff;
+  display: inline-block;
+}
+.enlace_menu a img{
+  margin-top: 13px;
+}
+.indicador{
+  font-size:15px;
+  background-color: #76B71F/*#d4e386*/;
+  padding: 2px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #2F3841;
+  top: 0;
+  right: -5px;
+  position:absolute;
+  z-index:5;
+  border: 1px solid white;
+  color: white;
+}
+.indicador_warning{
+  background-color: #F89406;
+}
+#app_content{
+    border: 0;
+}
+
+form.ui-filterable{
+    margin-top: -15px;
+}
+
+.tipo_movimiento{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.color1{
+    color: #CC0000;
+}
+.color2{
+    color: #849e02;
+}
+.color3{
+    color: #00529B;
+}
+.color4{
+    color: #939393;
+}
+.mayor{ color: #ABCD02; }
+.menor{ color: #D8000C; }
+a.enlace {
+  color: #849e02!important;
+}
+.ui-slider-label.ui-slider-label-a.ui-btn-active {
+  background-color: #849e02!important;
+}
+.allTextCollapsible .ui-btn{
+  white-space: normal;
+}

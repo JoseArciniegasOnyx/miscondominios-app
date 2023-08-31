@@ -1,0 +1,45 @@
+<div data-role="header" data-theme="c" class="tituloCabecera"></div>
+
+<div data-role="content">
+	<form method="post" data-ajax="false" id="form_nuevo_visitante">
+	  <ul data-role="listview">
+
+		  <li class="ui-field-contain">
+		    <label for="dni">NIT:</label>
+		    <input name="dni" id="dni" value="" type="text" required>
+		  </li>
+		  <li class="ui-field-contain">
+		    <label for="nombre">Nombre:</label>
+		    <input name="nombre" id="nombre" value="" type="text" required>
+		  </li>
+	    <li class="ui-field-contain">
+	      <label for="propietario">Propietario:</label>
+	      <select id="propietario" name="propietario">
+
+	      </select>
+	    </li>
+	    <li class="ui-field-contain">
+		    <label>
+		        <input type="checkbox" id="autorizado" name="autorizado">Autorizado
+		    </label>
+	    </li>
+	    <li class="ui-field-contain">
+	    	<span id="spMsg"></span>
+	    </li>
+		  <li class="ui-body ui-body-a">
+		    <fieldset class="ui-grid-a">
+		      <div class="ui-block-a">
+		      	<a id="cancelar" href="javascript:app.personas();" data-ajax="false" class="ui-btn hide">Cancelar</a>
+		      	<a id="eliminar" href="javascript:eliminarPers();" data-ajax="false" class="ui-btn hide">Eliminar</a>
+		      </div>
+		      <div class="ui-block-b"><button id="btnGuardar" type="button" data-theme="b">Guardar</button></div>
+		    </fieldset>
+		  </li>
+		</ul>
+		<input type="hidden" name="id_comunidad" id="id_comunidad">
+		<input type="hidden" name="id_customer" id="id_customer">
+		<input type="hidden" name="id_usuario" id="id_usuario">
+		<input type="hidden" name="id_visitante" id="id_visitante">
+		<input type="hidden" name="id_portero" id="id_portero" value="0">
+	</form>
+</div>
